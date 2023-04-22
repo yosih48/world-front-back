@@ -40,7 +40,7 @@ app.use("/users", users);
 
   
   // הגדרת תיקייה סטטית
-app.use(express.static(path.join(__dirname, "client")));
+app.use(express.static(path.join(__dirname, "client/dist")));
 // app.use(express.static(path.join(__dirname, "../../world-front/dist/index.html")));
 
 // הגדרת פורט

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "heroku-postbuild": "cd client && npm i && npm run build"
+    "heroku-postbuild": "cd client && npm i && npm run build",
+    "dev": "concurrently  \"node app.js\" \"cd client && npm run serve"
   },
   "type": "module",
   "author": "",
@@ -25,5 +26,9 @@
     "npm": "^9.1.3",
     "path": "^0.12.7",
     "twilio": "^3.84.0"
+  },
+  "devDependencies": {
+    "concurrency": "^0.1.4",
+    "concurrently": "^8.0.1"
   }
 }
